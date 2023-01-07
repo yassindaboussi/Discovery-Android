@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AllPageOfForget1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activity.ForgetPassword1">
+
+    <Button
+        android:id="@+id/btnForgetContinuer"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailLayoutForget"
+        android:layout_alignStart="@+id/txtEmailLayoutForget"
+        android:layout_alignEnd="@+id/txtEmailLayoutForget"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="57dp"
+        android:background="@drawable/roundedbuttonred"
+        android:text="@string/continuer"
+        android:textColor="#ffff" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/forgotpassword" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/forgot_password"
+        android:textColor="#172B4D"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/don_t_worry_it_happens_pleaser_enter_the_adress_associated_with_your_account"
+        android:textColor="#707C8F"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btnGoToLogin2"
+        android:layout_width="330dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="@string/BacktoPageLogin"
+        android:textColor="#9A9898"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.493"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmailLayoutForget"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/email"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="#172B4D"
+        app:boxStrokeWidth="2dp"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailForget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="27" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

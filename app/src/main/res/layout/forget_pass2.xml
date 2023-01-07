@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AllPageOfForget2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activity.ForgetPassword2">
+
+    <TextView
+        android:id="@+id/btnGoToLogin3"
+        android:layout_width="330dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="@string/BacktoPageLogin"
+        android:textColor="#9A9898"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.493"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnForgetSubmit"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnResendCode"
+        android:layout_alignStart="@+id/btnResendCode"
+        android:layout_alignEnd="@+id/btnResendCode"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/roundedbuttonred"
+        android:text="@string/verify"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/verification_code"
+        android:textColor="#172B4D"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/text3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/we_have_send_code_to_your_e_mail_Please_type_code_in_here"
+        android:textColor="#707C8F"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/codeotp" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/firstPinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:cursorVisible="true"
+        android:inputType="numberPassword"
+        android:padding="5dp"
+        android:textColor="#172B4D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="4"
+        app:itemHeight="80dp"
+        app:itemRadius="25dp"
+        app:itemSpacing="7dp"
+        app:itemWidth="80dp"
+        app:lineColor="#C6C6C6"
+        app:lineWidth="2dp"
+        app:viewType="rectangle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/btnResendCode"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstPinView"
+        android:layout_alignStart="@+id/firstPinView"
+        android:layout_alignEnd="@+id/firstPinView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="@string/DidntreceveCode"
+        android:textColor="#9A9898"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/btnForgetSubmit"
+        android:layout_alignStart="@+id/btnForgetSubmit"
+        android:layout_alignEnd="@+id/btnForgetSubmit"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="23dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#C2C2C2"
+        android:textSize="20sp" />
+
+</RelativeLayout>

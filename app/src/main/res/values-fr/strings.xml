@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Discovery</string>
+    <!--+++++++++++++++++++++++++++++++++++++++++++++ Begin of Login++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <string name="DontHaveAccount">New to Discovery? <font color='#FA181B'>Join Now</font></string>
+    <string name="Copyright">Discover tunisia © 2022  <font color='#FA181B'>made with ❤</font></string>
+    <string name="AlreadyHaveAccount">Already have an account? <font color='#FA181B'>Login</font></string>
+    <string name="DidntreceveCode">Didn\'t receive the Code? <font color='#FA181B'>Resend</font></string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="Confirmpassword">Confirm Password</string>
+    <string name="username">username</string>
+    <string name="mustNotBeEmpty">Must Not Be Empty!</string>
+    <string name="EmailMalformed">Email Malformed!</string>
+    <string name="BacktoPageLogin">Back to? <font color='#FA181B'>Login</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="WhatdouWant">What are \nyou looking for ?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="explorer">Explore</string>
+    <string name="add">Add</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="edit_profil">Edit profil</string>
+    <string name="about_me">About me</string>
+    <string name="nom">Nom</string>
+    <string name="bio">Bio</string>
+    <string name="change_password">Change password?</string>
+    <string name="type_something_cool_here">Type something cool here!</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="text">Text</string>
+    <string name="link">Link</string>
+    <string name="post">Post</string>
+    <string name="nothing">Nothing</string>
+    <string name="your_collection_list_of_photos_is_empty">Your collection list of photos is empty!</string>
+    <string name="your_collection_list_of_videos_is_empty">Your collection list of videos is empty!</string>
+    <string name="we_are_trying_to_connect_Please_wait">We are trying to connect Please wait ...</string>
+    <string name="this_is_a_custom_toast">This is a custom Toast</string>
+    <string name="informations">INFORMATIONS</string>
+    <string name="no_internet">No Internet :(</string>
+    <string name="you_need_to_be_connected_to_the_internet">You need to be connected to the internet</string>
+    <string name="confirm_email_address">Confirm Email Address</string>
+    <string name="you_need_to_check_your_inbox_n_to_verify_your_email">You need to check your inbox \n to verify your email</string>
+    <string name="continuer">Continuer</string>
+    <string name="don_t_worry_it_happens_pleaser_enter_the_adress_associated_with_your_account">Don\'t worry! it happens. Pleaser enter the adress associated with your account.</string>
+    <string name="verify">Verify</string>
+    <string name="verification_code">Verification code</string>
+    <string name="we_have_send_code_to_your_e_mail_Please_type_code_in_here">We have send code to your e-mail, please type code in here</string>
+    <string name="save">Enregistrer</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="modifier_votre_nom">Modifier votre nom</string>
+    <string name="cancel">Annuler</string>
+
+    <!--+++++++++++++++++++++++++++++++++++++++++++++ End of Login+++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+</resources>

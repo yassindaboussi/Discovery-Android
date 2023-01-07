@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="387dp"
+        android:layout_height="429dp"
+        app:cardCornerRadius="35dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedcadre"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bottomSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/btnCloseShare"
+                        android:layout_width="128dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="104dp"
+                        android:background="@color/Redfate7"
+                        android:gravity="center"
+                        android:text="Close"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_telegram"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/WhatsAppShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ico_whatsapp"
+                        app:layout_constraintEnd_toStartOf="@+id/FacebookShare"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+                    <TextView
+                        android:id="@+id/text_whatsapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WhatsApp"
+                        app:layout_constraintEnd_toEndOf="@+id/WhatsAppShare"
+                        app:layout_constraintStart_toStartOf="@+id/WhatsAppShare"
+                        app:layout_constraintTop_toBottomOf="@+id/WhatsAppShare" />
+
+
+                    <ImageView
+                        android:id="@+id/FacebookShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_facebook"
+                        app:layout_constraintEnd_toStartOf="@+id/MessengerShare"
+                        app:layout_constraintStart_toEndOf="@+id/WhatsAppShare"
+                        app:layout_constraintTop_toTopOf="@+id/WhatsAppShare" />
+
+
+                    <TextView
+                        android:id="@+id/text_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook"
+                        app:layout_constraintEnd_toEndOf="@+id/FacebookShare"
+                        app:layout_constraintStart_toStartOf="@+id/FacebookShare"
+                        app:layout_constraintTop_toBottomOf="@+id/FacebookShare" />
+
+
+                    <ImageView
+                        android:id="@+id/MessengerShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_messenger"
+                        app:layout_constraintEnd_toStartOf="@+id/InstagramShare"
+                        app:layout_constraintStart_toEndOf="@+id/FacebookShare"
+                        app:layout_constraintTop_toTopOf="@+id/FacebookShare" />
+
+                    <TextView
+                        android:id="@+id/text_messenger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Messenger"
+                        app:layout_constraintEnd_toEndOf="@+id/MessengerShare"
+                        app:layout_constraintStart_toStartOf="@+id/MessengerShare"
+                        app:layout_constraintTop_toBottomOf="@+id/MessengerShare" />
+
+
+                    <ImageView
+                        android:id="@+id/InstagramShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_instagram"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/MessengerShare"
+                        app:layout_constraintTop_toTopOf="@+id/MessengerShare" />
+
+                    <TextView
+                        android:id="@+id/text_instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instagram"
+                        app:layout_constraintEnd_toEndOf="@+id/InstagramShare"
+                        app:layout_constraintStart_toStartOf="@+id/InstagramShare"
+                        app:layout_constraintTop_toBottomOf="@+id/InstagramShare" />
+
+                    <ImageView
+                        android:id="@+id/TwitterShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ico_twitter"
+                        app:layout_constraintStart_toStartOf="@+id/WhatsAppShare"
+                        app:layout_constraintTop_toBottomOf="@+id/text_whatsapp" />
+
+                    <ImageView
+                        android:id="@+id/DiscordShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ico_discord"
+                        app:layout_constraintStart_toStartOf="@id/TwitterShare"
+                        app:layout_constraintTop_toBottomOf="@id/text_twitter" />
+
+                    <TextView
+                        android:id="@+id/text_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Twitter"
+                        app:layout_constraintEnd_toEndOf="@+id/TwitterShare"
+                        app:layout_constraintStart_toStartOf="@+id/TwitterShare"
+                        app:layout_constraintTop_toBottomOf="@+id/TwitterShare" />
+
+                    <TextView
+                        android:id="@+id/text_discord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discord"
+                        app:layout_constraintEnd_toEndOf="@+id/DiscordShare"
+                        app:layout_constraintStart_toStartOf="@+id/DiscordShare"
+                        app:layout_constraintTop_toBottomOf="@+id/DiscordShare" />
+
+                    <ImageView
+                        android:id="@+id/TelegramShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_telegram"
+
+                        app:layout_constraintEnd_toEndOf="@+id/MessengerShare"
+                        app:layout_constraintStart_toStartOf="@+id/MessengerShare"
+                        app:layout_constraintTop_toTopOf="@id/SnapChatShare" />
+
+                    <TextView
+                        android:id="@+id/text_telegram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="telegram"
+                        app:layout_constraintEnd_toEndOf="@+id/TelegramShare"
+                        app:layout_constraintStart_toStartOf="@+id/TelegramShare"
+                        app:layout_constraintTop_toBottomOf="@+id/TelegramShare" />
+
+                    <ImageView
+
+
+                        android:id="@+id/SnapChatShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_snapchat"
+                        app:layout_constraintEnd_toEndOf="@+id/FacebookShare"
+                        app:layout_constraintStart_toStartOf="@+id/FacebookShare"
+                        app:layout_constraintTop_toTopOf="@+id/TwitterShare" />
+
+                    <ImageView
+                        android:id="@+id/EmailShare"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ico_email"
+                        app:layout_constraintEnd_toEndOf="@id/InstagramShare"
+                        app:layout_constraintStart_toStartOf="@id/InstagramShare"
+                        app:layout_constraintTop_toTopOf="@id/SnapChatShare" />
+
+                    <TextView
+                        android:id="@+id/text_snapchat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SnapChat"
+                        app:layout_constraintEnd_toEndOf="@+id/SnapChatShare"
+                        app:layout_constraintStart_toStartOf="@+id/SnapChatShare"
+                        app:layout_constraintTop_toBottomOf="@+id/SnapChatShare" />
+
+                    <TextView
+                        android:id="@+id/text_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        app:layout_constraintEnd_toEndOf="@+id/EmailShare"
+                        app:layout_constraintStart_toStartOf="@+id/EmailShare"
+                        app:layout_constraintTop_toBottomOf="@id/EmailShare" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>

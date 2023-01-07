@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/toast_container">
+
+    <RelativeLayout
+        android:id="@+id/button_parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_card_parent"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            app:cardElevation="20dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:id="@+id/button_click_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:id="@+id/button_accent_border"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="#3EAA56" />
+
+                <TextView
+                    android:id="@+id/toast_text"
+                    android:layout_width="334dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/this_is_a_custom_toast"
+                    android:textColor="#131313"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

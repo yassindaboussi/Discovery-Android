@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Fragement.AddFragment">
+
+
+    <EditText
+        android:id="@+id/txtDescriptionPost"
+        android:layout_width="wrap_content"
+        android:layout_height="475dp"
+        android:layout_above="@+id/view2"
+        android:layout_below="@+id/btnAddPost"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:background="@null"
+        android:maxLength="250"
+        android:hint="@string/type_something_cool_here"
+        android:textColor="#868889"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/roundedcadre" />
+
+    <TextView
+        android:id="@+id/postImage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="60dp"
+        android:drawableLeft="@drawable/image"
+        android:drawablePadding="7dp"
+        android:text="@string/photo"
+        android:textAlignment="viewStart"
+        android:textColor="#4A4747"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/postImage3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/text"
+        android:drawablePadding="7dp"
+        android:text="@string/text"
+        android:textAlignment="viewStart"
+        android:textColor="#4A4747"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/postImage4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postImage3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/urlink"
+        android:drawablePadding="7dp"
+        android:text="@string/link"
+        android:textAlignment="viewStart"
+        android:textColor="#4A4747"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btnCloseAdd"
+        android:layout_width="44dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_close" />
+
+    <Button
+        android:id="@+id/btnAddPost"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/btnCloseAdd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/disabledbutton"
+        android:text="@string/post"
+        android:textColor="#CECFD1"
+        app:backgroundTint="@null"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtcountPostAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="18dp"
+        android:text="0/250"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imgPreviewPost"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="25dp"
+        tools:src="@tools:sample/avatars" />
+
+
+</RelativeLayout>

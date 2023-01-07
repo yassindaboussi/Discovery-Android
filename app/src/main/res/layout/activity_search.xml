@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activity.Search">
+
+    <TextView
+        android:id="@+id/whatareulookinggg"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Anything you want \n we can find it!"
+        android:textColor="#202B36"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchViewSearch"
+        android:layout_width="364dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/whatareulookinggg"
+        android:layout_alignStart="@+id/whatareulookinggg"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/searchbg"
+        android:iconifiedByDefault="true"
+        android:queryHint="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        android:layout_below="@+id/searchViewSearch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-4dp" />
+
+
+    <LinearLayout
+        android:id="@+id/LLFilterLieux"
+        android:layout_width="143dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/searchViewSearch"
+        android:layout_alignStart="@+id/searchViewSearch"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FilterLieux"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColorHint="#A1A1A1"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="#DFDFDF"
+            app:endIconTint="#000000"
+            app:startIconDrawable="@drawable/ic_pinposition"
+            app:startIconTint="#4CAF50">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvLieuxGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="143dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/LLFilterLieux"
+        android:layout_alignBottom="@+id/LLFilterLieux"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/LLFilterLieux"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FilterStars"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColorHint="#A1A1A1"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="#DFDFDF"
+            app:endIconTint="#000000"
+            app:startIconDrawable="@drawable/ic_star"
+            app:startIconTint="#F8C921">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvStarsGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

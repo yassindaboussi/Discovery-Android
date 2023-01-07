@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExploreFragmenttodo">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ExploreImgPreview"
+                android:layout_width="410dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_beach"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/raduiswhite"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ExploreImgPreview"
+                app:layout_constraintEnd_toEndOf="@+id/ExploreImgPreview"
+                app:layout_constraintStart_toStartOf="@+id/ExploreImgPreview">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_image_24"
+                    app:tint="#FA6926" />
+
+                <View style="@style/Divider.Vertical" />
+
+                <ImageView
+                    android:id="@+id/GoToVr"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_360degre"
+                    app:tint="#AB13AE34" />
+
+                <View style="@style/Divider.Vertical" />
+
+                <ImageView
+                    android:id="@+id/GoToText"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_forum_24"
+                    app:tint="#EAB20B" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                style="@style/Divider.Horizontal"
+                android:layout_width="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/TextCategorie"
+                app:layout_constraintStart_toStartOf="@+id/TextCategorie"
+                app:layout_constraintTop_toBottomOf="@+id/ExploreImgPreview"
+
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TextCategorie"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Categorie"
+                android:textColor="#202B36"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <ImageView
+                android:id="@+id/CadreSahra"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextCategorie" />
+
+            <ImageView
+                android:id="@+id/CadreBeach"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreSahra" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerBeach"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+                app:layout_constraintEnd_toEndOf="@+id/CadreBeach"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView2"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView2" />
+
+            <ImageView
+                android:id="@+id/CadreNature"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreBeach" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerNature"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView3"
+                app:layout_constraintEnd_toEndOf="@+id/CadreNature"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView3"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView3" />
+
+            <ImageView
+                android:id="@+id/CadreCulture"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreNature" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerCulture"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView4"
+                app:layout_constraintEnd_toEndOf="@+id/CadreCulture"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView4"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView4" />
+
+            <ImageView
+                android:id="@+id/CadreSport"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreCulture" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerSport"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView5"
+                app:layout_constraintEnd_toEndOf="@+id/CadreSport"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView4"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView5" />
+
+            <ImageView
+                android:id="@+id/CadreArt"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreSport" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerArt"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreArt"
+                app:layout_constraintEnd_toEndOf="@+id/CadreArt"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView6"
+                app:layout_constraintTop_toTopOf="@+id/CadreArt" />
+
+            <ImageView
+                android:id="@+id/CadreFood"
+                android:layout_width="361dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/raduiswhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreArt" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerFood"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView7"
+                app:layout_constraintEnd_toEndOf="@+id/CadreFood"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView7"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView7" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_beach"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreBeach"
+                app:layout_constraintStart_toStartOf="@+id/CadreBeach"
+                app:layout_constraintTop_toTopOf="@+id/CadreBeach"
+                tools:ignore="MissingConstraints" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView3"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_nature"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreNature"
+                app:layout_constraintStart_toStartOf="@+id/CadreNature"
+                app:layout_constraintTop_toTopOf="@+id/CadreNature"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView4"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_culturee"
+                android:scaleType="fitXY"
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreCulture"
+                app:layout_constraintStart_toStartOf="@+id/CadreCulture"
+                app:layout_constraintTop_toTopOf="@+id/CadreCulture"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView5"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_sportt"
+                android:scaleType="fitXY"
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreSport"
+                app:layout_constraintStart_toStartOf="@+id/CadreSport"
+                app:layout_constraintTop_toTopOf="@+id/CadreSport"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView6"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_arts"
+                android:scaleType="fitXY"
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreArt"
+                app:layout_constraintStart_toStartOf="@+id/CadreArt"
+                app:layout_constraintTop_toTopOf="@+id/CadreArt"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView7"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_food"
+                android:scaleType="fitXY"
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreFood"
+                app:layout_constraintStart_toStartOf="@+id/CadreFood"
+                app:layout_constraintTop_toTopOf="@+id/CadreFood"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineSahara"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineBeach"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView2"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView2"
+                app:layout_constraintVertical_bias="0.58"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineNature"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView3"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView3"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView3"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineCulture"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView4"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView4"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView4"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineSport"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView5"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView5"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView5"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineArt"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView6"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView6"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView6"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/LineFood"
+                style="@style/Divider.Horizontal"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+                android:background="#CCCCCC"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView7"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView7"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView7"
+                tools:ignore="MissingConstraints" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifImageView"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/gif_sahara"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/raduisimage"
+                app:layout_constraintBottom_toBottomOf="@+id/CadreSahra"
+                app:layout_constraintStart_toStartOf="@+id/CadreSahra"
+                app:layout_constraintTop_toTopOf="@+id/CadreSahra"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerDesert"
+                android:layout_width="244dp"
+                android:layout_height="92dp"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+                app:layout_constraintEnd_toEndOf="@+id/CadreSahra"
+                app:layout_constraintStart_toEndOf="@+id/gifImageView"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:background="#F7F7F7"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CadreFood"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_exploreDesert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+                app:layout_constraintStart_toEndOf="@+id/LineSahara"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_explorePlage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView2"
+                app:layout_constraintStart_toEndOf="@+id/LineBeach"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView2"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_exploreNature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView3"
+                app:layout_constraintStart_toEndOf="@+id/LineNature"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView3"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_exploreCulture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView4"
+                app:layout_constraintStart_toEndOf="@+id/LineCulture"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView4"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_exploreSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView5"
+                app:layout_constraintStart_toEndOf="@+id/LineSport"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView5"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_exploreArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView6"
+                app:layout_constraintStart_toEndOf="@+id/LineArt"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView6"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_exploreFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/gifImageView7"
+                app:layout_constraintStart_toEndOf="@+id/LineFood"
+                app:layout_constraintTop_toTopOf="@+id/gifImageView7"
+                android:layout_marginStart="5dp"
+                shimmer:duration="800">
+                <!-- Adding 3 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                    <include layout="@layout/shimmer_explore" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

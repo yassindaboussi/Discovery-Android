@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RelativeLayoutEditProfil"
+        tools:context=".Views.Fragement.EditProfil">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/edit_profil"
+        android:textAlignment="center"
+        android:textColor="#515151"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/BackEdit"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@id/txtNothing"
+        android:layout_alignTop="@+id/txtNothing"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_backarrow" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_below="@+id/txtNothing"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/editprofil" />
+
+    <TextView
+        android:id="@+id/txtempty"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/about_me"
+        android:textAlignment="viewStart"
+        android:textColor="#817E7E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtempty3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtempty"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nom"
+        android:textAlignment="viewStart"
+        android:textColor="#4A4747"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/NamehasSelcted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtempty3"
+        android:layout_alignBottom="@+id/txtempty3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:drawablePadding="5dp"
+        android:text="User Name"
+        android:textAlignment="textEnd"
+        android:textColor="#817E7E"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/EmailhasSelcted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtempty4"
+        android:layout_alignBottom="@+id/txtempty4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:drawablePadding="5dp"
+        android:text="User email"
+        android:textAlignment="textEnd"
+        android:textColor="#817E7E"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/BiohasSelcted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtempty5"
+        android:layout_alignBottom="@+id/txtempty5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:drawablePadding="5dp"
+        android:maxLength="31"
+        android:text="User Bio"
+        android:textAlignment="textEnd"
+        android:textColor="#817E7E"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtempty4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtempty3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/email"
+        android:textAlignment="viewStart"
+        android:textColor="#4A4747"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtempty5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtempty4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/bio"
+        android:textAlignment="viewStart"
+        android:textColor="#4A4747"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/PasswordhasSelcted"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/change_password"
+        android:textAlignment="textStart"
+        android:textColor="#1A4861"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txtempty5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="#C2C1C1" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>
