@@ -20,6 +20,15 @@ Discovery app📱helps you find where to spend your vacation. Whatever your age 
     </div>
 </p>
 
+<p align="center">(<a href="#top">back to top</a>)</p>
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project.
+* [Kotlin](https://kotlinlang.org)
+* [NodeJs](https://nodejs.org/en/)
+* [ExpressJs](https://expressjs.com/fr/)
+* [MongoDB](https://www.mongodb.com)
 
 
 <p align="center">(<a href="#top">back to top</a>)</p>
