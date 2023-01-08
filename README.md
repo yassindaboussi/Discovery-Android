@@ -32,3 +32,35 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 <p align="center">(<a href="#top">back to top</a>)</p>
+
+<div align=center>
+
+<h2>🌟Star this repository🌟</h2>
+
+Please ⭐️ this repo and share it with others
+           
+</div>
+
+<br>
+
+<div align=center>
+       
+![HITS](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/yassindaboussi/Discovery-Android&count_bg=#79C83D&title_bg=#555555&icon=&icon_color=#E7E7E7&title=PAGE+VIEWS&edge_flat=false)
+       
+<p align="center">
+   <a href="https://github.com/yassindaboussi/Discovery-Android">
+     <img src="https://img.shields.io/badge/Discovery-v1.2.5-green?style=flat"/> 
+   </a>
+  <a href="https://github.com/yassindaboussi/Discovery-Android/network/members">
+    <img src="https://img.shields.io/github/forks/yassindaboussi/Discovery-Android"/> 
+  </a>  
+  <a href="https://github.com/yassindaboussi/Discovery-Android/stargazers">
+    <img src="https://img.shields.io/github/stars/yassindaboussi/Discovery-Android"/> 
+  </a>
+</p>
+       
+</div>
+
+<p align="center">(<a href="#top">back to top</a>)</p>
+
+
