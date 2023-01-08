@@ -46,6 +46,9 @@ Please ⭐️ this repo and share it with others
 <div align=center>
 
 ![HITS](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/yassindaboussi/Discovery-Android&count_bg=#79C83D&title_bg=#555555&icon=&icon_color=#E7E7E7&title=PAGE+VIEWS&edge_flat=false)
+[![MongoDB](https://img.shields.io/badge/MongoDB-green.svg)](https://mongodb.com)
+[![Kotlin](https://img.shields.io/badge/Kotlin-blueviolet.svg)](https://kotlinlang.org)
+[![ExpressJs](https://img.shields.io/badge/ExpressJs-orange.svg)](https://expressjs.com)
 
 <p align="center">
    <a href="https://github.com/yassindaboussi/Discovery-Android">
