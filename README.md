@@ -44,7 +44,7 @@ Please ⭐️ this repo and share it with others
 <br>
 
 <div align=center>
-![HITS](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/yassindaboussi/Discovery-Android&count_bg=#79C83D&title_bg=#555555&icon=&icon_color=#E7E7E7&title=PAGE+VIEWS&edge_flat=false)
+[![HITS](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/yassindaboussi/Discovery-Android&count_bg=#79C83D&title_bg=#555555&icon=&icon_color=#E7E7E7&title=PAGE+VIEWS&edge_flat=false)
        
 <p align="center">
    <a href="https://github.com/yassindaboussi/Discovery-Android">
