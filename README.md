@@ -53,7 +53,7 @@ Please ⭐️ this repo and share it with others
     
 [![View-Only License](https://img.shields.io/badge/License-View--Only-red.svg?style=flat-square)](LICENSE.md)
 
-This project is licensed under the **View-Only License**. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the **View-Only License**. See the [LICENSE](LICENSE) file for details.
 
 
 </p>
