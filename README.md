@@ -50,6 +50,12 @@ Please ⭐️ this repo and share it with others
   <a href="https://github.com/yassindaboussi/Discovery-Android/stargazers">
     <img src="https://img.shields.io/github/stars/yassindaboussi/Discovery-Android"/> 
   </a>
+    
+[![View-Only License](https://img.shields.io/badge/License-View--Only-red.svg?style=flat-square)](LICENSE.md)
+
+This project is licensed under the **View-Only License**. See the [LICENSE.md](LICENSE.md) file for details.
+
+
 </p>
 
 </div>
