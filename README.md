@@ -5,7 +5,6 @@ Discovery app📱helps you find where to spend your vacation. Whatever your age 
 <h1 align="center"> Screenshot </h1>
 <br/>
 
-
 <p align=center>
     <div align="center">
      <img  width = "200px" src ="capture/1.jpg"/>
