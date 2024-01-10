@@ -5,6 +5,8 @@ Discovery app📱helps you find where to spend your vacation. Whatever your age 
 <h1 align="center"> Screenshot </h1>
 <br/>
 
+*Note: The following screenshots provide only a subset for a quick overview. Not all screenshots are included here. More images are available, showcasing various features and aspects of the Discovery app. You can explore the complete set of screenshots by [contacting me](mailto:yassin.daboussi@esprit.tn) or by checking the project directly.*
+
 <p align=center>
     <div align="center">
      <img  width = "200px" src ="capture/1.jpg"/>
